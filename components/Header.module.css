@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.links {
+    display: flex;
+    gap: 1em;
+    text-transform: uppercase;
+}
+
+.link .active {
+    font-weight: bold;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 2em;
+    cursor: pointer;
+}

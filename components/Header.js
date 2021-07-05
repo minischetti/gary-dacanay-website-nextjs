@@ -1,16 +1,19 @@
 import Link from "next/link"
 import styles from "./Header.module.css"
+import {useRouter} from "next/router";
+import NavLink from "./NavLink";
 
 export default function Header() {
+
     return (
-        <header>
+        <div className={styles.header}>
             <Link href="/">
-                <h1>Gary Dacanay</h1>
+                <div className={styles.logo}>Gary <strong>Dacanay</strong></div>
             </Link>
-            <div>
-                <Link href="/music">Music</Link>
+            <div className={styles.links}>
+                <NavLink href="/music/bio">Music</NavLink>
                 <Link href="/yoga">Yoga</Link>
             </div>
-        </header>
+        </div>
     )
 }
