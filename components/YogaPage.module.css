@@ -1,4 +1,18 @@
 .page {
-    background-color: white;
     color: black;
+}
+.page:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: white;
+    color: white;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("/yoga/yoga-background.jpg");
+    background-size: cover;
+    background-position: right;
+    filter: opacity(.5);
 }

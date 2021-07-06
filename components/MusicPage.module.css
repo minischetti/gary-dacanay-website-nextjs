@@ -2,7 +2,7 @@
     color: white;
 }
 .page:after {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     content: "";
@@ -11,4 +11,42 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-image: url("/music/music-background.jpg");
+    background-size: cover;
+    background-position: right;
+    filter: brightness(.5);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.link {
+    background-color: red;
+}
+
+.capsule {
+    background-color: black;
+    padding: 1em 2em;
+}
+
+.link:first-child .capsule {
+    border-radius: 10px 0 10px 0;
+}
+
+.link:last-child .capsule {
+    border-radius: 0 10px 0 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 75vw;
+    margin: 0 auto;
+    /*height: 25vw;*/
+    align-items: center;
+    gap: 2em;
 }

@@ -1,8 +1,15 @@
 .header {
+    backdrop-filter: blur(1em);
+    width: 100%;
+    margin-bottom: 10vh;
+}
+
+.content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
+    width: 100%;
 }
 
 .links {
@@ -19,4 +26,11 @@
     text-transform: uppercase;
     font-size: 2em;
     cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .content {
+        margin: 0 auto;
+        max-width: 50vw;
+    }
 }
