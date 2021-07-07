@@ -1,7 +1,7 @@
 .header {
-    backdrop-filter: blur(1em);
+    /*backdrop-filter: blur(1em);*/
     width: 100%;
-    margin-bottom: 10vh;
+    /*margin-bottom: 10vh;*/
 }
 
 .content {
@@ -18,10 +18,6 @@
     text-transform: uppercase;
 }
 
-.link .active {
-    font-weight: bold;
-}
-
 .logo {
     text-transform: uppercase;
     font-size: 2em;
@@ -31,6 +27,6 @@
 @media (min-width: 1024px) {
     .content {
         margin: 0 auto;
-        max-width: 50vw;
+        padding: 1em 10vw;
     }
 }

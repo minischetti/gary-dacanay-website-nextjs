@@ -9,7 +9,6 @@ export default function MusicPage({children}) {
 
     return (
         <div className={styles.page}>
-            <Header/>
             {/*<div className={styles.links}>*/}
             {/*    <NavLink className={styles.link} href="/music/bio">*/}
             {/*        <div className={styles.capsule}>Bio</div>*/}
@@ -19,9 +18,11 @@ export default function MusicPage({children}) {
             {/*    </NavLink>*/}
             {/*</div>*/}
             <div className={styles.content}>
+                <Header/>
                 {children}
+                <SocialBar/>
             </div>
-            <SocialBar/>
+
         </div>
     )
 }

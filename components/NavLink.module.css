@@ -1,6 +1,12 @@
 .link {
+    transition: .25s all ease;
+}
+
+.link:hover:not(.active) {
+    letter-spacing: .25em;
 }
 
 .active {
     font-weight: bold;
+    cursor: not-allowed;
 }

@@ -1,0 +1,54 @@
+.hero {
+    padding: 10vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    z-index: -2;
+}
+
+.hero:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    background-image: url("/music/music-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    filter: brightness(.5) blur(.25em);
+    z-index: -1;
+}
+
+.heroContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.heroContent img, .heroContent .heroVideo {
+    height: 25vw;
+}
+
+.heroVideo {
+    aspect-ratio: 16/9;
+    background-color: black;
+}
+
+.heroVideo iframe {
+    width: 100%;
+    height: 100%;
+}

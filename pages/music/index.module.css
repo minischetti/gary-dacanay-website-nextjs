@@ -1,44 +1,123 @@
-.promo {
-    font-size: 2em;
-    text-align: center;
+.hero {
+    padding: 10vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
-.promoContent {
+.hero:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    z-index: -2;
+}
+
+.hero:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    background-image: url("/music/music-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    filter: brightness(.5) blur(.25em);
+    z-index: -1;
+}
+
+.heroContent {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.promoContent img, .promoContent .video {
+.heroContent img, .heroContent .heroVideo {
     height: 25vw;
 }
 
-.video {
+.heroVideo {
     aspect-ratio: 16/9;
+    background-color: black;
 }
 
-.video iframe {
+.heroVideo iframe {
     width: 100%;
     height: 100%;
 }
 
-.content {
+.section {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding: 2em 0;
+    padding: 5vw 10vw;
 }
 
-.content p {
-    line-height: 1.6;
+.section:not(:last-child) {
+    border-bottom: 1px solid rgba(255,255,255,.25);
+    /*background-color: rgba(255,255,255,.25);*/
 }
 
-.content img {
+.section h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.section p {
+    line-height: 2;
+    font-size: 1.15em;
+}
+
+.section img {
     height: 100%;
-    width: 25vw;
+    width: 50vw;
+    order: 1;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    padding: .5em 2em;
+    background-color: #0070f3;
+    border-radius: .5em;
+    text-align: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 75%;
+    transition: .25s all ease;
+}
+
+.button:hover, .button:focus {
+    box-shadow: 0 0 0 2px #fff;
+    outline: 0;
 }
 
 @media (min-width: 1024px) {
-    .content {
+    .buttons {
+        justify-content: unset;
+    }
+    .button {
+        font-size: 100%;
+    }
+    .section {
         flex-direction: unset;
+    }
+    .section img {
+        width: 25vw;
+        order: unset;
+        align-self: unset;
     }
 }
