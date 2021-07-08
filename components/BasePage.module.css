@@ -1,0 +1,14 @@
+.darkPage {
+    color: white;
+    background-color: black;
+}
+
+.lightPage {
+    color: black;
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}

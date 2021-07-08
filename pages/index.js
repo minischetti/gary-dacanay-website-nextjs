@@ -1,9 +1,9 @@
-import HomePage from "@/components/HomePage"
 import styles from "./index.module.css"
+import BasePage from "@/components/BasePage";
 
 export default function Home() {
   return (
-      <HomePage>
+      <BasePage>
           {/*<div className={styles.banner}>*/}
           {/*    <img src={"/home/brand-new-day-promo.jpeg"}></img>*/}
           {/*    <div>*/}
@@ -23,6 +23,6 @@ export default function Home() {
               {/*  <p>Available now on Spotify and Apple Music</p>*/}
               {/*</div>*/}
           </div>
-      </HomePage>
+      </BasePage>
   )
 }

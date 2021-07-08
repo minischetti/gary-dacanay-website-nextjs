@@ -1,9 +1,9 @@
-import MusicPage from "../../components/MusicPage";
-import styles from "./index.module.css"
+import styles from "./index.module.css";
+import BasePage from "@/components/BasePage";
 
 export default function MusicHome() {
     return (
-        <MusicPage>
+        <BasePage>
             <div className={styles.hero}>
                 <div className={styles.heroContent}>
                     <div className={styles.heroVideo}>
@@ -41,6 +41,6 @@ export default function MusicHome() {
                     <img src="/music/music-lessons-hero.jpeg"/>
                 </div>
             </div>
-        </MusicPage>
+        </BasePage>
     )
 }
