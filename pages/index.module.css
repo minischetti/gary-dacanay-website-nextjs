@@ -1,26 +1,27 @@
 .promo {
     /*text-align: center;*/
     padding: 10vw;
+    margin: 0 auto;
 }
 
 .promoContent {
     display: flex;
     gap: 1em;
-    height: 25vw;
+    height: 30vw;
 }
 
 .promoContent img {
-    height: 25vw;
+    display: block;
 }
 
 .promoBox {
     padding: 1em;
-    border: 1px solid rgba(255,255,255,.25);
+    border: 1px solid var(--white25);
     border-radius: .5em;
 }
 
 .video {
-    height: 25vw;
+    height: 30vw;
     aspect-ratio: 16/9;
 }
 
@@ -31,14 +32,39 @@
 
 .banner {
     display: flex;
-    border-radius: .5em;
+    flex-direction: column;
+    border-radius: var(--border-radius-md);
     border: 1px solid rgba(255,255,255,.25);
     padding: 1em;
     width: 100%;
-    height: 10vw;
+    /*height: 20vw;*/
     gap: 1em;
+    font-family: 'Inconsolata', monospace;
 }
 
 .banner img {
-    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(255,255,255,.25);
+    padding: 1em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.title {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    gap: 1em;
+    padding: .5em 1em;
+    border: 1px solid var(--white25);
+    border-radius: var(--border-radius-sm);
+    align-items: center;
 }

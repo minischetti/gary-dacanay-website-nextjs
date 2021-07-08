@@ -120,3 +120,9 @@
         align-self: unset;
     }
 }
+
+.img {
+    border-radius: .25em;
+    border: 1px solid rgba(255,255,255,.25);
+    padding: 1em;
+}

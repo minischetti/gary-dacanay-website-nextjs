@@ -1,12 +1,14 @@
 .link {
     transition: .25s all ease;
+    opacity: .5;
 }
 
 .link:hover:not(.active) {
-    letter-spacing: .25em;
+    /*letter-spacing: .25em;*/
 }
 
 .active {
+    opacity: 1;
     font-weight: bold;
     cursor: not-allowed;
 }
