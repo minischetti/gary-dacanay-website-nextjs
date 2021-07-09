@@ -2,9 +2,8 @@
     /*backdrop-filter: blur(1em);*/
     width: 100%;
     /*margin-bottom: 10vh;*/
-    /*padding: 1em 2em;*/
-}
 
+}
 .content {
     display: flex;
     justify-content: space-between;
@@ -18,13 +17,10 @@
     text-transform: uppercase;
 }
 
-.logo {
-    text-transform: uppercase;
-    font-size: 2em;
-    cursor: pointer;
-}
-
 @media (min-width: 1024px) {
+    .header {
+        padding: 1em 2em;
+    }
     .content {
         margin: 0 auto;
         padding: 1em 10vw;
