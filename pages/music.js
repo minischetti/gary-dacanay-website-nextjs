@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./music.module.css";
 import BasePage from "@/components/BasePage";
 import Image from "next/image";
 
@@ -9,7 +9,13 @@ export default function MusicHome() {
             </div>
             <div>
                 <div className={styles.section}>
-                    <p>I have over 30 years of professional playing experience and over 20 years of teaching experience with a B.A. in Music from DePaul University and a M.M. in Guitar Performance from Cleveland State University. I have led my own solo music projects as well as recorded with various rock, blues, jazz and hip hop artists.</p>
+                    <div className={styles.image}>
+                        <Image width="250" height="250" src="/music/music-bio-hero.jpeg"/>
+                    </div>
+                    <div>
+                        <h1>Biography</h1>
+                        <p>I have over 30 years of professional playing experience and over 20 years of teaching experience with a B.A. in Music from DePaul University and a M.M. in Guitar Performance from Cleveland State University. I have led my own solo music projects as well as recorded with various rock, blues, jazz and hip hop artists.</p>
+                    </div>
                 </div>
                 <div className={styles.section}>
                     <div>
@@ -29,7 +35,9 @@ export default function MusicHome() {
                             </a>
                         </div>
                     </div>
-                    <Image src="/music/music-lessons-hero.jpeg"/>
+                    <div className={styles.image}>
+                        <Image width="250" height="250" src="/music/music-lessons-hero.jpeg"/>
+                    </div>
                 </div>
             </div>
         </BasePage>

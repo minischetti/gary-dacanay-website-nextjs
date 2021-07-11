@@ -1,0 +1,37 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    /*z-index: 1;*/
+    height: 50vh;
+}
+
+/*.hero:before {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    content: "";*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: white;*/
+/*    color: white;*/
+/*    z-index: -2;*/
+/*    opacity: .5;*/
+/*}*/
+
+.hero:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("/yoga/yoga-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+}
+
+.image {
+
+}

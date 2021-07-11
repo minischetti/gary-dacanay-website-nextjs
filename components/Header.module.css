@@ -1,14 +1,7 @@
 .header {
-    /*backdrop-filter: blur(1em);*/
-    /*position: sticky;*/
     top: 0;
     width: 100%;
-    min-height: 20vh;
-    /*padding-bottom: 10vw;*/
     z-index: 1;
-    background-color: var(--black75);
-    backdrop-filter: blur(1em);
-    box-shadow: 0 0 1em var(--black75);
 
 }
 .content {
