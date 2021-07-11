@@ -19,8 +19,8 @@ export default function Home() {
                           <p>Available now on Spotify and Apple Music</p>
                       </div>
                       <div className={styles.buttons}>
-                          <a href="" className={styles.button}><SiSpotify/>Spotify</a>
-                          <a href="" className={styles.button}><SiApple/>Apple Music</a>
+                          <a href="https://open.spotify.com/album/6bOo7B27gDnbA70Rr4CANU" target={"_blank"} className={styles.button}><SiSpotify/>Spotify</a>
+                          <a href="https://music.apple.com/us/album/brand-new-day-single/1551250045" target={"_blank"} className={styles.button}><SiApple/>Apple Music</a>
                       </div>
                   </div>
               </div>

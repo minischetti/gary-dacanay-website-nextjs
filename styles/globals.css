@@ -1,6 +1,7 @@
 :root {
   --media-query-med: 1024px;
   --white25: rgba(255,255,255,.25);
+  --black75: rgba(0,0,0,.75);
   --border-radius-sm: .25em;
   --border-radius-md: .5em;
   --border-radius-lg: 1em;
