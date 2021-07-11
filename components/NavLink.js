@@ -3,7 +3,7 @@ import Link from "next/link";
 import {forwardRef} from "react";
 import styles from "./NavLink.module.css";
 
-export default ({href, children}) => {
+export default function NavLink({href, children}) {
     const router = useRouter()
     const currentPath = router.pathname;
 

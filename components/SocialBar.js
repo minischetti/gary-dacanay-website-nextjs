@@ -5,16 +5,16 @@ import {IoMail, IoLogoFacebook, IoLogoInstagram, IoLogoYoutube} from "react-icon
 export default function SocialBar() {
     return (
         <div className={styles.container}>
-            <a href="mailto:gjdacanay@gmail.com" target="_top">
+            <a href="mailto:gjdacanay@gmail.com" rel="noreferrer" target="_top">
                 <IoMail size={24} />
             </a>
-            <a href="https://www.facebook.com/garydacanay" target="_blank">
+            <a href="https://www.facebook.com/garydacanay" rel="noreferrer" target="_blank">
                 <IoLogoFacebook size={24} />
             </a>
-            <a href="https://www.instagram.com/gary_dacanay" target="_blank">
+            <a href="https://www.instagram.com/gary_dacanay" rel="noreferrer" target="_blank">
                 <IoLogoInstagram size={24} />
             </a>
-            <a href="https://www.youtube.com/user/GaryDacanay" target="_blank">
+            <a href="https://www.youtube.com/user/GaryDacanay" rel="noreferrer" target="_blank">
                 <IoLogoYoutube size={24} />
             </a>
         </div>
