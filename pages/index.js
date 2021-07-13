@@ -11,8 +11,8 @@ export default function Home() {
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/oNMjKGADGqM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
               <div className={styles.release}>
-                    <Image width="500" height="500" src={"/home/brand-new-day-promo.jpeg"}></Image>
                   <div className={styles.image}>
+                    <Image width="500" height="500" src={"/home/brand-new-day-promo.jpeg"}></Image>
                   </div>
                   <div className={styles.releaseContent}>
                       <div>

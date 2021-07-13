@@ -1,14 +1,14 @@
 .section {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(255,255,255,.25);
+    border: 1px solid var(--border-color-25);
     border-radius: var(--border-radius-md);
     align-items: center;
     margin: 5vh 5vw;
 }
 
 .sectionContent {
-    padding: 2vh 10vw 4vh;
+    padding: 4vh 10vw 8vh;
 }
 
 .section:not(:first-child) {
@@ -25,11 +25,12 @@
 }
 
 .section .imageContainer {
-    padding: 4px;
+    padding: var(--spacing-sm);
     /*display: flex;*/
-    /*order: 1;*/
+    order: 1;
     width: 100%;
     /*overflow: hidden;*/
+
 }
 
 .section img {
@@ -41,13 +42,11 @@
         flex-direction: unset;
         margin: 5vh 10vw;
     }
-    .section .imageContainer {
-    }
-    .section:nth-child(even) .imageContainer {
-        order: 1;
+    .section:nth-child(odd) .imageContainer {
+        order: unset;
     }
     .sectionContent {
-        padding: 2vh 2vw;
+        padding: 4vh 2vw;
     }
 
 }

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.5.0",
+    "framer-motion": "^4.1.17",
     "ionicons": "^5.5.2",
     "next": "11.0.1",
     "react": "17.0.2",

@@ -1,11 +1,6 @@
-.darkPage {
-    color: white;
-    background-color: black;
-}
-
-.lightPage {
-    color: black;
-    background-color: white;
+.page {
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .content {

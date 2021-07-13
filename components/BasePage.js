@@ -2,9 +2,6 @@ import Link from "next/link"
 import React from 'react';
 import styles from "./BasePage.module.css"
 import Header from "@/components/Header";
-import SocialBar from "@/components/SocialBar";
-import {useRouter} from "next/router";
-import NavLink from "@/components/NavLink";
 import Footer from "@/components/Footer";
 
 export const THEME = {
@@ -13,9 +10,9 @@ export const THEME = {
 }
 
 export default function BasePage({children, theme = THEME.DARK}) {
-    const className = theme === THEME.LIGHT ? styles.lightPage : styles.darkPage;
+    const className = theme === THEME.LIGHT ? "lightTheme" : "darkTheme";
     return (
-        <div className={className}>
+        <div className={className + " " + styles.page}>
             <div className={styles.content}>
                 <Header/>
                 {children}
