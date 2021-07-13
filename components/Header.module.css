@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 4em;
+    padding: 3vh 6vw;
 }
 
 .links {
@@ -23,6 +23,6 @@
     }
     .content {
         margin: 0 auto;
-        padding: 1em 10vw;
+        padding: 1vh 10vw;
     }
 }
