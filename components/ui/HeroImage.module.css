@@ -5,20 +5,12 @@
     margin: 0 5vw;
     aspect-ratio: 16/9;
     border: 1px solid var(--white25);
-    animation: scaleIn .25s ease-in;
+    padding: 4px;
+    border-radius: var(--border-radius-md);
 }
 
 .hero img {
     filter: brightness(0.5) grayscale(1);
-}
-
-@keyframes scaleIn {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
 }
 
 
