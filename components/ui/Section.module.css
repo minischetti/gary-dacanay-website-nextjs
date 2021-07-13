@@ -4,7 +4,7 @@
     border: 1px solid rgba(255,255,255,.25);
     border-radius: var(--border-radius-md);
     align-items: center;
-    margin: 5vh 10vw;
+    margin: 5vh 5vw;
 }
 
 .sectionContent {
@@ -39,6 +39,7 @@
 @media (min-width: 1024px) {
     .section {
         flex-direction: unset;
+        margin: 5vh 10vw;
     }
     .section .imageContainer {
     }

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HeroImage({imageSrc}) {
     return (
         <div className={styles.hero}>
-            <Image src={imageSrc} layout={"fill"}></Image>
+            <Image src={imageSrc} width={16} height={9} layout={"responsive"}></Image>
         </div>
     )
 }
