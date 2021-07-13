@@ -17,8 +17,8 @@ export default function MusicHome() {
                     <p>Lessons are custom designed to challenge the student to consistently improve and achieve their goals. Students must have Skype or some type of video chat. After submitting a secured payment through PayPal you will receive an email to schedule your online lesson.</p>
                     <div className={styles.buttons}>
                         {/*Take each guitar lesson plan and make a button from it */}
-                        {guitarLessonPlans.map(plan =>
-                            <Button href={plan.url}>
+                        {guitarLessonPlans.map((plan, index) =>
+                            <Button key={index} href={plan.url}>
                                 <h1>{plan.price}</h1>
                                 <div>
                                     <div>{plan.duration}</div>
