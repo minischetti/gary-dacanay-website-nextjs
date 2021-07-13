@@ -1,0 +1,30 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 5vw;
+    aspect-ratio: 16/9;
+    border: 1px solid var(--white25);
+    animation: scaleIn .25s ease-in;
+}
+
+.hero img {
+    filter: brightness(0.5) grayscale(1);
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .hero {
+        margin: 5vh 10vw;
+        aspect-ratio: 16/9;
+    }
+}
