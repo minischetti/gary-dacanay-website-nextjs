@@ -1,37 +1,20 @@
-.hero {
-    position: relative;
+.galleryContainer {
+    display: flex;
+    gap: 1vw;
+    /*height: 50vh;*/
+    /*width: 100vw;*/
     overflow: hidden;
-    /*z-index: 1;*/
-    height: 50vh;
+    padding: 1vw 10vh;
 }
 
-/*.hero:before {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    content: "";*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background-color: white;*/
-/*    color: white;*/
-/*    z-index: -2;*/
-/*    opacity: .5;*/
-/*}*/
+.mySwiper {
+}
 
-.hero:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
+.imageContainer {
     width: 100%;
-    height: 100%;
-    background-image: url("/yoga/yoga-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    z-index: -1;
 }
 
-.image {
+.imageContainer img {
+   /*border-radius: var(--border-radius-sm);*/
 
 }

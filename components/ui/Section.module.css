@@ -5,10 +5,13 @@
     border-radius: var(--border-radius-md);
     align-items: center;
     margin: 5vh 5vw;
+    padding: 2vw;
 }
 
 .sectionContent {
-    padding: 4vh 10vw 8vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
 }
 
 .section:not(:first-child) {
@@ -24,15 +27,6 @@
     line-height: 2;
 }
 
-.section .imageContainer {
-    padding: var(--spacing-sm);
-    /*display: flex;*/
-    order: 1;
-    width: 100%;
-    /*overflow: hidden;*/
-
-}
-
 .section img {
     border-radius: var(--border-radius-sm);
 }
@@ -41,12 +35,13 @@
     .section {
         flex-direction: unset;
         margin: 5vh 10vw;
+        padding: 2vw;
     }
-    .section:nth-child(odd) .imageContainer {
-        order: unset;
+    .section:nth-child(odd) .sectionContent {
+        order: 1;
     }
     .sectionContent {
-        padding: 4vh 2vw;
+        padding: 2vw;
     }
 
 }

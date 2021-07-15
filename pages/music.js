@@ -5,6 +5,14 @@ import Button from "@/components/ui/Button";
 import guitarLessonPlans from "@/data/guitarLessonPlans";
 import HeroImage from "@/components/ui/HeroImage";
 import {motion} from "framer-motion";
+import Gallery, {DIRECTION} from "@/components/ui/Gallery";
+import Img from "@/components/ui/Img";
+import music0 from "../public/music/music-0.jpg";
+import music1 from "../public/music/music-1.jpg";
+import music2 from "../public/music/music-2.jpg";
+import music3 from "../public/music/music-3.jpg";
+
+import React from "react";
 
 export default function MusicHome() {
     const list = {
@@ -48,6 +56,7 @@ export default function MusicHome() {
                     </div>
                 </Section>
             </motion.div>
+            <Gallery imageSrcs={[music0, music2, music3]}/>
         </BasePage>
     )
 }

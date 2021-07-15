@@ -1,0 +1,42 @@
+.release {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-md);
+    border: 1px solid rgba(255,255,255,.25);
+    font-family: 'Inconsolata', monospace;
+}
+
+.release .image {
+    padding: var(--spacing-sm);
+}
+
+.release img {
+    border-radius: var(--border-radius-sm);
+}
+
+.releaseContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.title {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    gap: 1em;
+    padding: .5em 1em;
+    border: 1px solid var(--white25);
+    border-radius: var(--border-radius-sm);
+    align-items: center;
+}
