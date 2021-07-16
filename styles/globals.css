@@ -16,7 +16,7 @@
 .darkTheme {
   --border-color-25: var(--white25);
   --background-color-25: var(--white25);
-  --background-color: #111;
+  --background-color: #222;
   --section-background-color: #000;
   --font-color: white;
 }
@@ -24,7 +24,7 @@
 .lightTheme {
   --border-color-25: var(--black25);
   --background-color-25: var(--black25);
-  --background-color: #eee;
+  --background-color: #ddd;
   --section-background-color: #fff;
   --font-color: black;
 }
@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -2,7 +2,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
-    padding: 2em 4em 0;
+    padding: 1em 2em;
 }
 
 .content {
@@ -20,10 +20,9 @@
 
 @media (min-width: 1024px) {
     .header {
-
+        padding: 2em 4em 0;
     }
     .content {
         margin: 0 auto;
-        /*padding: 1vh 10vw;*/
     }
 }

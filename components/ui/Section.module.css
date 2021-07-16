@@ -1,13 +1,14 @@
 .section {
     display: flex;
     flex-direction: column;
-    /*border: 1px solid var(--border-color-25);*/
+    /*border: 2px solid var(--border-color-25);*/
     border-radius: var(--border-radius-md);
     /*align-items: center;*/
     /*margin: 5vh 5vw;*/
     transform-origin: top;
     padding: 2vw;
     background-color: var(--section-background-color);
+    /*box-shadow: 0 0 1em var(--black25);*/
 }
 
 .sectionContent {
@@ -22,7 +23,7 @@
 
 .section h1 {
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .section p {
@@ -43,6 +44,8 @@
     }
     .sectionContent {
         /*padding: 2vw;*/
+    }
+    .section h1 {
     }
 
 }
