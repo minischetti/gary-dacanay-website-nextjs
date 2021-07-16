@@ -1,11 +1,13 @@
 .section {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--border-color-25);
+    /*border: 1px solid var(--border-color-25);*/
     border-radius: var(--border-radius-md);
-    align-items: center;
-    margin: 5vh 5vw;
+    /*align-items: center;*/
+    /*margin: 5vh 5vw;*/
+    transform-origin: top;
     padding: 2vw;
+    background-color: var(--section-background-color);
 }
 
 .sectionContent {
@@ -34,14 +36,13 @@
 @media (min-width: 1024px) {
     .section {
         flex-direction: unset;
-        margin: 5vh 10vw;
-        padding: 2vw;
+        /*margin: 2vh 10vw;*/
     }
     .section:nth-child(odd) .sectionContent {
         order: 1;
     }
     .sectionContent {
-        padding: 2vw;
+        /*padding: 2vw;*/
     }
 
 }

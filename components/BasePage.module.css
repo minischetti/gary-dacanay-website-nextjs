@@ -1,9 +1,22 @@
 .page {
     background-color: var(--background-color);
     color: var(--font-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+    margin: var(--spacing-md);
+    gap: var(--spacing-md);
 }
+
+@media (min-width: 1024px) {
+    .content {
+        gap: var(--spacing-lg);
+        margin: var(--spacing-lg);
+    }
+
+}
+

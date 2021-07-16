@@ -1,4 +1,4 @@
-import styles from "./Image.module.css"
+import styles from "./Img.module.css"
 import Image from "next/image";
 import React from "react";
 

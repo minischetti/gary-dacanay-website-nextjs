@@ -1,0 +1,18 @@
+.link {
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: serif;
+    gap: .1em;
+    transition: .25s all ease;
+}
+
+.link:hover {
+    gap: .5em;
+}
+
+.icon {
+    display: flex;
+}

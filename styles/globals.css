@@ -1,23 +1,31 @@
 :root {
   --media-query-med: 1024px;
+  --white10: rgba(255,255,255,.1);
   --white25: rgba(255,255,255,.25);
   --black25: rgba(0,0,0,.25);
   --black75: rgba(0,0,0,.75);
   --border-radius-sm: .25em;
   --border-radius-md: .5em;
   --border-radius-lg: 1em;
+  --border-radius-rnd: 10em;
   --spacing-sm: .25em;
+  --spacing-md: 1em;
+  --spacing-lg: 2em;
 }
 
 .darkTheme {
   --border-color-25: var(--white25);
-  --background-color: black;
+  --background-color-25: var(--white25);
+  --background-color: #111;
+  --section-background-color: #000;
   --font-color: white;
 }
 
 .lightTheme {
   --border-color-25: var(--black25);
-  --background-color: white;
+  --background-color-25: var(--black25);
+  --background-color: #eee;
+  --section-background-color: #fff;
   --font-color: black;
 }
 
@@ -34,7 +42,7 @@ html {
 }
 
 body {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 h1, h2, h3, h4, h5, h6 {

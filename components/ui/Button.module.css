@@ -1,16 +1,21 @@
 .button {
     display: flex;
-    padding: .5em 2em;
-    background-color: #0070f3;
+    padding: .25em 1em;
+    /*background: #fff linear-gradient(45deg, var(--black25), var(--white25));*/
     border-radius: var(--border-radius-sm);
+    background-color: #333;
+    /*border: 2px solid var(--white25);*/
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 1em;
-    transition: .25s all ease;
+    transition: .25s all ease-in-out;
+    font-size: 100%;
+    /*color: black;*/
+    /*text-shadow: 0 .25em .25em var(--black75);*/
 }
 
-.button:hover, .button:focus {
+.button:focus {
     box-shadow: inset 0 0 0 2px #fff;
     outline: 0;
 }

@@ -2,7 +2,6 @@
     display: grid;
     align-items: center;
     gap: 1em;
-    margin: 0 auto;
     max-width: 90vw;
     min-height: 90vh;
 }
@@ -10,7 +9,7 @@
 .video {
     aspect-ratio: 16/9;
     padding: var(--spacing-sm);
-    border: 1px solid var(--border-color-25);
+    /*border: 1px solid var(--border-color-25);*/
 }
 
 .video iframe {
@@ -21,6 +20,7 @@
 
 @media (min-width: 1024px) {
     .promo {
+        margin: 0 auto;
         grid-template-columns: 3fr 1fr;
     }
     .promoContent {

@@ -7,12 +7,14 @@ import HeroImage from "@/components/ui/HeroImage";
 import {motion} from "framer-motion";
 import Gallery, {DIRECTION} from "@/components/ui/Gallery";
 import Img from "@/components/ui/Img";
+import musicBackground from "../public/music/music-background.jpg";
 import music0 from "../public/music/music-0.jpg";
 import music1 from "../public/music/music-1.jpg";
 import music2 from "../public/music/music-2.jpg";
 import music3 from "../public/music/music-3.jpg";
 
 import React from "react";
+import Release from "@/components/ui/Release";
 
 export default function MusicHome() {
     const list = {
@@ -33,14 +35,15 @@ export default function MusicHome() {
 
     return (
         <BasePage>
-            <HeroImage imageSrc={"/music/music-background.jpg"}/>
+            <HeroImage imageSrc={musicBackground}/>
             <motion.div initial="hidden"
                         animate="visible"
-                        variants={list}>
-                <Section imageSrc="/music/music-bio-hero.jpeg" title={"Biography"}>
+                        variants={list}
+                        className={styles.sections}>
+                <Section title={"Biography"}>
                     <p>I have over 30 years of professional playing experience and over 20 years of teaching experience with a B.A. in Music from DePaul University and a M.M. in Guitar Performance from Cleveland State University. I have led my own solo music projects as well as recorded with various rock, blues, jazz and hip hop artists.</p>
                 </Section>
-                <Section imageSrc="/music/music-lessons-hero.jpeg" title={"Lessons"}>
+                <Section title={"Lessons"}>
                     <p>Lessons are custom designed to challenge the student to consistently improve and achieve their goals. Students must have Skype or some type of video chat. After submitting a secured payment through PayPal you will receive an email to schedule your online lesson.</p>
                     <div className={styles.buttons}>
                         {/*Take each guitar lesson plan and make a button from it */}

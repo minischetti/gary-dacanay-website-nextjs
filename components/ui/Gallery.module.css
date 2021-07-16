@@ -1,15 +1,26 @@
 .gallery {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1vw;
-    padding: 2vw 5vh;
 }
 
 .vertical {
     flex-direction: column;
 }
 
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    gap: 1vw;
+    overflow: hidden;
+}
+
 @media (min-width: 1024px) {
     .gallery {
-        margin: 5vh 10vw;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

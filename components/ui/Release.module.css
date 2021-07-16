@@ -1,9 +1,11 @@
 .release {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: var(--border-radius-md);
-    border: 1px solid rgba(255,255,255,.25);
-    font-family: 'Inconsolata', monospace;
+    background-color: black;
+    /*border: 1px solid var(--white25);*/
+    /*font-family: 'Inconsolata', monospace;*/
 }
 
 .release .image {
@@ -17,8 +19,8 @@
 .releaseContent {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    padding: 1em;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
 }
 
 .buttons {

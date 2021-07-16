@@ -1,8 +1,8 @@
 .footer {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    margin-top: 5vw;
+    gap: 1em;
+    /*margin-top: 2vh;*/
     padding: 5vw;
     justify-content: center;
     align-items: center;
