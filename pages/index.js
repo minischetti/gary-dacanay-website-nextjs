@@ -1,10 +1,10 @@
 import styles from "./index.module.css"
-import BasePage from "@/components/BasePage";
 import Release from "@/components/ui/Release";
+import MusicPage from "@/components/view/MusicPage";
 
 export default function Home() {
     return (
-        <BasePage>
+        <MusicPage>
             <div className={styles.promo}>
                 <div className={styles.video}>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/oNMjKGADGqM"
@@ -19,6 +19,6 @@ export default function Home() {
                          appleMusicUrl={"https://music.apple.com/us/album/brand-new-day-single/1551250045"}>
                 </Release>
             </div>
-        </BasePage>
+        </MusicPage>
     )
 }
