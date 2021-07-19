@@ -1,13 +1,3 @@
-.buttons {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1em;
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid var(--white25);
-}
-
 .sections {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,10 +10,21 @@
     gap: 1em;
 }
 
+.venmo {
+    display: flex;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 2px solid var(--white25);
+    gap: 1em;
+    align-items: center;
+}
+
+
+.venmoTag {
+    font-size: 150%;
+}
+
 @media (min-width: 1024px) {
-    .buttons {
-        flex-direction: unset;
-    }
     .releases {
         grid-template-columns: repeat(4, 1fr);
     }

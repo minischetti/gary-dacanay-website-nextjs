@@ -26,9 +26,9 @@
     font-size: 1.5em;
 }
 
-.section p {
-    line-height: 2;
-}
+/*.section p {*/
+/*    line-height: 2;*/
+/*}*/
 
 .section img {
     border-radius: var(--border-radius-sm);

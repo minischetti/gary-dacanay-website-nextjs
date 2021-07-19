@@ -8,7 +8,7 @@ import {useInView} from "react-intersection-observer";
 export default function Section({imageSrc, title, children}) {
     const { ref, inView, entry } = useInView({
         threshold: 0,
-        // triggerOnce: true,
+        triggerOnce: true,
     });
     const variants = {
         initial: {scaleY: 0},

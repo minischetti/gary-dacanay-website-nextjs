@@ -12,9 +12,11 @@ import music0 from "../public/music/music-0.jpg";
 import music1 from "../public/music/music-1.jpg";
 import music2 from "../public/music/music-2.jpg";
 import music3 from "../public/music/music-3.jpg";
+import {IoLogoVenmo} from "react-icons/io5";
 
 import React from "react";
 import Release from "@/components/ui/Release";
+import MusicPage from "@/components/view/MusicPage";
 
 export default function MusicHome() {
     const list = {
@@ -34,7 +36,7 @@ export default function MusicHome() {
     }
 
     return (
-        <BasePage>
+        <MusicPage>
             <HeroImage imageSrc={musicBackground}/>
             <motion.div initial="hidden"
                         animate="visible"
@@ -44,22 +46,14 @@ export default function MusicHome() {
                     <p>I have over 30 years of professional playing experience and over 20 years of teaching experience with a B.A. in Music from DePaul University and a M.M. in Guitar Performance from Cleveland State University. I have led my own solo music projects as well as recorded with various rock, blues, jazz and hip hop artists.</p>
                 </Section>
                 <Section title={"Lessons"}>
-                    <p>Lessons are custom designed to challenge the student to consistently improve and achieve their goals. Students must have Skype or some type of video chat. After submitting a secured payment through PayPal you will receive an email to schedule your online lesson.</p>
-                    <div className={styles.buttons}>
-                        {/*Take each guitar lesson plan and make a button from it */}
-                        {guitarLessonPlans.map((plan, index) =>
-                            <Button key={index} href={plan.url}>
-                                <h1>{plan.price}</h1>
-                                <div>
-                                    <div>{plan.duration}</div>
-                                    {plan.subtext ? <small><i>{plan.subtext}</i></small> : ""}
-                                </div>
-                            </Button>
-                        )}
+                    <p>Lessons are custom designed to challenge the student to consistently improve and achieve their goals. Students must have Skype or some type of video chat. After submitting a secured payment through Venmo you will receive an email to schedule your online lesson.</p>
+                    <div className={styles.venmo}>
+                        <IoLogoVenmo size={48}/>
+                        <div className={styles.venmoTag}>@guitarfire</div>
                     </div>
                 </Section>
             </motion.div>
-            <Gallery imageSrcs={[music0, music2, music3]}/>
-        </BasePage>
+            <Gallery imageSrcs={[music0, music3, music2]}/>
+        </MusicPage>
     )
 }

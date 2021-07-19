@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 export default function Gallery({imageSrcs, theme = DIRECTION.HORIZONTAL}) {
     const { ref, inView, entry } = useInView({
         threshold: 0,
-        // triggerOnce: true,
+        triggerOnce: true,
     });
     const list = {
         visible: {
@@ -31,7 +31,7 @@ export default function Gallery({imageSrcs, theme = DIRECTION.HORIZONTAL}) {
         }
     }
     return (
-        <motion.div ref={ref} initial={"hidden"} animate={inView ? "visible" : ""} variants={list} className={styles.gallery + (theme === DIRECTION.VERTICAL ? styles.vertical : "")}>
+        <motion.div ref={ref} initial={"hidden"} animate={inView ? "visible" : ""} variants={list} transition={{ duration: 1 }} className={styles.gallery + (theme === DIRECTION.VERTICAL ? styles.vertical : "")}>
             {imageSrcs.map((imageSrc, index) =>
                 <motion.div className={styles.wrapper} key={index} variants={listItem}>
                     <Img src={imageSrc} placeholder={"blur"} layout={"responsive"}/>

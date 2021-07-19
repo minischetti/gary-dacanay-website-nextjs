@@ -2,9 +2,9 @@
     position: relative;
     aspect-ratio: 16/9;
     overflow: hidden;
+    border-radius: var(--border-radius-md);
 }
 
 .hero img {
-    /*border-radius: var(--border-radius-sm);*/
     /*filter: brightness(0.5) grayscale(1);*/
 }
