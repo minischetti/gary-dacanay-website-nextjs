@@ -24,14 +24,3 @@ export default function Yoga() {
         </YogaPage>
     )
 }
-
-// export const getInitialProps = async (ctx) => {
-//     const glob = require('glob');
-//
-//     const yogaPictures = glob.sync("/public/yoga/*.jpeg");
-//     return {
-//         props: {
-//             yogaPictures: yogaPictures
-//         }
-//     }
-// }

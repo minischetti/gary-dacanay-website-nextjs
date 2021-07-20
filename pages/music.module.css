@@ -4,31 +4,7 @@
     gap: 1em;
 }
 
-.releases {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-}
-
-.venmo {
-    display: flex;
-    margin-top: 1em;
-    padding-top: 1em;
-    border-top: 2px solid var(--white25);
-    gap: 1em;
-    align-items: center;
-}
-
-
-.venmoTag {
-    font-size: 150%;
-}
-
 @media (min-width: 1024px) {
-    .releases {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
     .sections {
         grid-template-columns: 1fr 2fr;
     }

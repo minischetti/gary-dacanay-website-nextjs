@@ -6,23 +6,9 @@
     min-height: 90vh;
 }
 
-.video {
-    aspect-ratio: 16/9;
-    padding: var(--spacing-sm);
-    /*border: 1px solid var(--border-color-25);*/
-}
-
-.video iframe {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 @media (min-width: 1024px) {
     .promo {
         margin: 0 auto;
         grid-template-columns: 3fr 1fr;
-    }
-    .promoContent {
     }
 }
