@@ -1,14 +1,31 @@
 .promo {
-    display: grid;
-    align-items: center;
-    gap: 1em;
-    max-width: 90vw;
-    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    /*height: 90%;*/
+    /*width: 100%;*/
 }
 
-@media (min-width: 1024px) {
+.video {
+    /*height: 90%;*/
+}
+
+.releases {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media (min-width: 1280px) {
     .promo {
-        margin: 0 auto;
-        grid-template-columns: 3fr 1fr;
+        /*display: grid;*/
+        /*grid-template-columns: 2fr 1fr;*/
+        flex-direction: unset;
+    }
+    .video {
+        width: 75vw;
+    }
+    .releases {
+        flex-direction: unset;
     }
 }

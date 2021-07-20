@@ -1,6 +1,6 @@
 import styles from "./Release.module.css";
-import Image from "next/image";
 import {SiApple, SiSpotify} from "react-icons/si/index";
+import Img from "@/components/ui/Img";
 
 export default function Release({imageSrc, title, description, spotifyUrl, appleMusicUrl}) {
     return (
@@ -16,7 +16,7 @@ export default function Release({imageSrc, title, description, spotifyUrl, apple
                 </div>
             </div>
             <div className={styles.image}>
-                <Image width="500" height="500" src={imageSrc} layout={"responsive"}></Image>
+                <Img width="500" height="500" src={imageSrc} layout={"responsive"}></Img>
             </div>
         </div>
     )

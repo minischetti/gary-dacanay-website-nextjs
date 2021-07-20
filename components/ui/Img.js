@@ -5,7 +5,7 @@ import React from "react";
 export default function Img(props) {
     return (
         <div className={styles.container}>
-            <Image {...props}/>
+            <Image {...props} placeholder={"blur"}/>
         </div>
     )
 }

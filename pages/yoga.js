@@ -1,5 +1,3 @@
-import BasePage, {THEME} from "@/components/BasePage";
-import styles from "./yoga.module.css";
 import HeroImage from "@/components/ui/HeroImage";
 import Section from "@/components/ui/Section";
 

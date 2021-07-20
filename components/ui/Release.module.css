@@ -1,9 +1,10 @@
 .release {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    /*flex-direction: column;*/
+    /*justify-content: space-between;*/
     border-radius: var(--border-radius-md);
     background-color: black;
+    align-items: center;
     /*border: 1px solid var(--white25);*/
     /*font-family: 'Inconsolata', monospace;*/
 }
@@ -41,4 +42,16 @@
     border: 1px solid var(--white25);
     border-radius: var(--border-radius-sm);
     align-items: center;
+}
+
+@media (min-width: 720px) {
+    .release {
+        grid-auto-flow: column;
+    }
+}
+
+@media (min-width: 1280px) {
+    .release {
+        grid-template-rows: 1fr auto;
+    }
 }

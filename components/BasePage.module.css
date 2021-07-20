@@ -12,7 +12,7 @@
     gap: var(--spacing-md);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
     .content {
         gap: var(--spacing-lg);
         margin: var(--spacing-lg);

@@ -6,6 +6,6 @@
     cursor: pointer;
 }
 
-.logo strong {
+.logo .bold {
     font-weight: bolder;
 }
