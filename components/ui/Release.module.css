@@ -1,12 +1,7 @@
 .release {
     display: grid;
-    /*flex-direction: column;*/
-    /*justify-content: space-between;*/
     border-radius: var(--border-radius-md);
     background-color: black;
-    align-items: center;
-    /*border: 1px solid var(--white25);*/
-    /*font-family: 'Inconsolata', monospace;*/
 }
 
 .release .image {
@@ -27,7 +22,7 @@
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: var(--spacing-md);
 }
 
 .title {
