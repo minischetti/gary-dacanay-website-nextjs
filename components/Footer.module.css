@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 1em;
     /*margin-top: 2vh;*/
-    padding: 5vw;
+    padding: var(--spacing-2xlg);
     justify-content: center;
     align-items: center;
     /*width: 100%;*/
