@@ -1,6 +1,6 @@
 .promo {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: row;
     gap: var(--spacing-lg);
 }
 
@@ -8,19 +8,19 @@
 }
 
 .releases {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: row;
     gap: 1em;
 }
 
 @media (min-width: 1280px) {
     .promo {
-        flex-direction: row;
+        /*grid-template-columns: 1fr auto;*/
     }
     .video {
-        width: 75vw;
+        /*width: 100%;*/
     }
     .releases {
-        flex-direction: row;
+        grid-auto-flow: column;
     }
 }

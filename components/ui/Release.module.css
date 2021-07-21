@@ -1,5 +1,7 @@
 .release {
-    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
     border-radius: var(--border-radius-md);
     background-color: black;
 }
@@ -10,6 +12,7 @@
 
 .release img {
     border-radius: var(--border-radius-sm);
+    /*max-width: 100%;*/
 }
 
 .releaseContent {
@@ -37,16 +40,18 @@
     border: 1px solid var(--white25);
     border-radius: var(--border-radius-sm);
     align-items: center;
+    font-size: 90%;
 }
 
 @media (min-width: 720px) {
     .release {
+        display: grid;
         grid-auto-flow: column;
     }
 }
 
 @media (min-width: 1280px) {
     .release {
-        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr 1fr;
     }
 }
