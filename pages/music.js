@@ -10,6 +10,8 @@ import music3 from "../public/music/music-3.jpg";
 import React from "react";
 import MusicPage from "@/components/view/MusicPage";
 import Venmo from "@/components/ui/Venmo";
+import SlideIn from "@/components/ui/SlideIn";
+import Divider from "@/components/ui/Divider";
 
 export default function Music() {
     return (
@@ -21,6 +23,7 @@ export default function Music() {
                 </Section>
                 <Section title="Lessons">
                     <p>Lessons are custom designed to challenge the student to consistently improve and achieve their goals. Students must have Skype or some type of video chat. After submitting a secured payment through Venmo you will receive an email to schedule your online lesson.</p>
+                    <Divider/>
                     <Venmo tag="guitarfire"/>
                 </Section>
             </div>

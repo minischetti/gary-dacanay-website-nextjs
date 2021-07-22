@@ -5,7 +5,7 @@ import React from "react";
 export default function Venmo({tag}) {
     return (
         <div className={styles.container}>
-            <IoLogoVenmo size={48}/>
+            <IoLogoVenmo size={36}/>
             <div className={styles.tag}>@{tag}</div>
         </div>
     )

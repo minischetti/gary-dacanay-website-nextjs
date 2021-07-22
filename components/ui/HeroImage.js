@@ -7,10 +7,7 @@ import {useState, useEffect, useRef} from "react";
 
 export default function HeroImage({imageSrc}) {
     const { scrollYProgress } = useViewportScroll();
-    const [scrollYPercent, setScrollYPercent] = useState(scrollYProgress);
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
-
-    scrollYProgress.onChange(setScrollYPercent);
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.75]);
 
     return (
         <div className={styles.hero}>

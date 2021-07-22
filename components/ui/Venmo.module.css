@@ -1,13 +1,10 @@
 .container {
     display: flex;
-    margin-top: 1em;
-    padding-top: 1em;
-    border-top: 2px solid var(--white25);
     gap: 1em;
     align-items: center;
 }
 
 
 .tag {
-    font-size: 150%;
+    font-size: 125%;
 }
