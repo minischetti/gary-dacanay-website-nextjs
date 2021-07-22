@@ -14,10 +14,10 @@ export default function Home() {
                 </div>
                 <div className={styles.releases}>
                     <Release imageSrc={brandNewDay}
-                             title={"Brand New Day"}
-                             description={"Available now on Spotify and Apple Music"}
-                             spotifyUrl={"https://open.spotify.com/album/6bOo7B27gDnbA70Rr4CANU"}
-                             appleMusicUrl={"https://music.apple.com/us/album/brand-new-day-single/1551250045"}>
+                            title={"Brand New Day"}
+                            description={"Available now on Spotify and Apple Music"}
+                            spotifyUrl={"https://open.spotify.com/album/6bOo7B27gDnbA70Rr4CANU"}
+                            appleMusicUrl={"https://music.apple.com/us/album/brand-new-day-single/1551250045"}>
                     </Release>
                     <Release imageSrc={keepOnGoing}
                              title={"Keep On Going"}

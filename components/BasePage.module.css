@@ -3,6 +3,8 @@
     color: var(--font-color);
     display: flex;
     flex-direction: column;
+    /*min-width: 100vw;*/
+    /*min-height: 100vh;*/
 }
 
 .content {
@@ -15,7 +17,8 @@
 @media (min-width: 1280px) {
     .content {
         gap: var(--spacing-lg);
-        margin: var(--spacing-lg);
+        margin: 0 auto;
+        width: 75vw;
     }
 
 }

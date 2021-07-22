@@ -8,7 +8,7 @@ export default function SlideIn({children, className}) {
     });
     const listVariants = {
         initial: {
-            y: "10%",
+            y: "5%",
             opacity: 0,
         },
         animate: {
@@ -17,7 +17,7 @@ export default function SlideIn({children, className}) {
             transition: {
                 ease: "easeOut",
                 duration: 1
-            }
+            },
         }
     }
 
