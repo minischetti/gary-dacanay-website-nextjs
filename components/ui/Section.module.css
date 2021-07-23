@@ -14,6 +14,7 @@
 }
 
 .section .title {
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: bold;

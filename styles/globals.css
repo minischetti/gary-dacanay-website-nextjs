@@ -12,6 +12,8 @@
   --spacing-md: 1em;
   --spacing-lg: 2em;
   --spacing-2xlg: 4em;
+  --font-title: "Roboto", sans-serif;
+  --font-body: "Source Sans Pro", sans-serif;
 }
 
 .darkTheme {
@@ -36,7 +38,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--font-body);
   line-height: 1.6;
 }
 
@@ -45,12 +47,12 @@ html {
 }
 
 body {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-family: var(--font-title);
+  font-weight: bold;
 }
 
 h1, h2, h3, h4, p {
