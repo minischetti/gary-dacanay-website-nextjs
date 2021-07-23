@@ -8,43 +8,12 @@
 }
 
 .release .image {
-    /*position: relative;*/
-    /*padding: var(--spacing-sm);*/
-    /*clip-path: circle(50%);*/
-    /*border-radius: 50%;*/
-    /*overflow: hidden;*/
     margin: var(--spacing-md);
     margin-bottom: 0;
-    /* box-shadow: 0 0 1em rgba(0,0,0,.5); */
-}
-
-.release .image:before {
-    /*position: absolute;*/
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 25%;
-    height: 25%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    z-index: 1;
-    border-radius: 50%;
-}
-
-.release .image:after {
-    /*position: absolute;*/
-    content: "";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: conic-gradient(white, transparent);
-    opacity: .1;
 }
 
 .release img {
     border-radius: var(--border-radius-sm);
-    /*max-width: 100%;*/
 }
 
 .releaseContent {
@@ -59,7 +28,7 @@
 
 .buttons {
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     gap: var(--spacing-md);
 }
 
@@ -70,30 +39,43 @@
 
 .button {
     display: flex;
-    gap: 1em;
+    gap: .5em;
     padding: .5em 1em;
     border: 2px solid var(--white25);
     border-radius: var(--border-radius-md);
     align-items: center;
     justify-content: center;
     font-size: 90%;
+    outline: 0;
+    background-color: black;
+    transition: .25s all ease;
 }
 
-@media (min-width: 720px) {
+.button:focus {
+    background-color: var(--background-color-25);
+    box-shadow: 0 0 2em var(--background-color-25);
+    transform: scale(1.1);
+
+}
+
+.button:active {
+    transform: scale(.9);
+}
+
+@media (min-width: 480px) {
     .buttons {
-        flex-direction: row;
+        grid-auto-flow: column;
     }
-    .button {
-    }
+}
+
+
+@media (min-width: 720px) {
     .release {
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
     .release .image {
         margin-bottom: var(--spacing-md);
-    }
-    .releaseContent {
-
     }
 }
 

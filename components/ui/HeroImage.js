@@ -9,20 +9,6 @@ import SlideIn from "./SlideIn";
 export default function HeroImage({imageSrc}) {
     const { scrollYProgress } = useViewportScroll();
     const scale = useTransform(scrollYProgress, [0, 1], [1, 1.75]);
-    const { ref, inView, entry } = useInView({
-        threshold: 0,
-    });
-
-    const variants = {
-        initial: {
-
-            boxShadow: "0 0 1em red"
-        },
-        animate: {
-            scale: 1,
-            boxShadow: "0 0 1em blue"
-        }
-    }
 
     return (
         <SlideIn className={styles.hero}>

@@ -4,7 +4,3 @@
     overflow: hidden;
     border-radius: var(--border-radius-md);
 }
-
-.hero img {
-    /*filter: brightness(0.5) grayscale(1);*/
-}

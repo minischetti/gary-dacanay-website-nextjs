@@ -18,6 +18,7 @@
   --border-color-25: var(--white25);
   --background-color-25: var(--white25);
   --background-color: #222;
+  --background-color-opposite: #ddd;
   --section-background-color: #000;
   --font-color: white;
 }
@@ -26,6 +27,7 @@
   --border-color-25: var(--black25);
   --background-color-25: var(--black25);
   --background-color: #ddd;
+  --background-color-opposite: #222;
   --section-background-color: #fff;
   --font-color: black;
 }

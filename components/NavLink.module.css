@@ -3,8 +3,13 @@
     opacity: .5;
 }
 
+.link:focus {
+
+}
+
 .link:hover:not(.active) {
-    /*letter-spacing: .25em;*/
+    /* letter-spacing: .25em; */
+    /* background-color: var(--background-color-25); */
 }
 
 .active {
