@@ -33,11 +33,14 @@
 }
 
 .title {
+    font-family: var(--font-title);
     font-size: 150%;
     font-weight: bold;
 }
 
 .button {
+    font-family: var(--font-title);
+    font-weight: bold;
     display: flex;
     gap: .5em;
     padding: .5em 1em;
