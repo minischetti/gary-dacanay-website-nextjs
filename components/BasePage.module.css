@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    min-height:
+    min-height: 100vh;
 }
 
 .content {
@@ -14,7 +14,7 @@
     gap: var(--spacing-md);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .content {
         gap: var(--spacing-lg);
         margin: 0 auto;

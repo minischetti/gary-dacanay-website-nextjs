@@ -1,9 +1,6 @@
 import styles from "./HeroImage.module.css";
-import Image from "next/image";
 import {motion, useViewportScroll, useTransform} from "framer-motion";
 import Img from "@/components/ui/Img";
-import { useInView } from 'react-intersection-observer';
-import {useState, useEffect, useRef} from "react";
 import SlideIn from "./SlideIn";
 
 export default function HeroImage({imageSrc}) {

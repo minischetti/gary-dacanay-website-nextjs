@@ -4,10 +4,6 @@
     gap: var(--spacing-lg);
 }
 
-.video {
-
-}
-
 .releases {
     display: grid;
     gap: 1em;
@@ -16,18 +12,5 @@
 @media (min-width: 1920px) {
     .releases {
         grid-auto-flow: column;
-    }
-}
-
-@media (min-width: 1440px) {
-    .promo {
-        /*grid-template-columns: 1fr auto;*/
-        /*grid-template-columns: 2fr 1fr;*/
-    }
-    .video {
-        /*width: 100%;*/
-    }
-    .releases {
-        /*grid-auto-flow: row;*/
     }
 }
