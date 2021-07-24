@@ -1,10 +1,15 @@
 .sections {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1em;
 }
 
-@media (min-width: 1280px) {
+@media (orientation: landscape) {
+    .sections {
+        grid-auto-flow: column;
+    }
+}
+
+@media (min-width: 1024px) {
     .sections {
         grid-template-columns: 1fr 2fr;
     }
