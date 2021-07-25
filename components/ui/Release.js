@@ -2,6 +2,7 @@ import styles from "./Release.module.css";
 import {SiApple, SiSpotify} from "react-icons/si/index";
 import Img from "@/components/ui/Img";
 import SlideIn from "./SlideIn";
+import Button from "@/components/ui/Button";
 
 export default function Release({imageSrc, title, description, spotifyUrl, appleMusicUrl}) {
     return (
@@ -16,8 +17,8 @@ export default function Release({imageSrc, title, description, spotifyUrl, apple
                         <p>{description}</p>
                     </div>
                     <div className={styles.buttons}>
-                        <a href={spotifyUrl} target={"_blank"} rel={"noreferrer"} className={styles.button}><SiSpotify/>Spotify</a>
-                        <a href={appleMusicUrl} target={"_blank"} rel={"noreferrer"} className={styles.button}><SiApple/>Apple Music</a>
+                        <Button href={spotifyUrl}><SiSpotify/>Spotify</Button>
+                        <Button className={styles.button}><SiApple/>Apple Music</Button>
                     </div>
                 </div>
             </div>

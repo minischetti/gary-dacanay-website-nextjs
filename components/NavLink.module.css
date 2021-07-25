@@ -3,15 +3,6 @@
     opacity: .5;
 }
 
-.link:focus {
-
-}
-
-.link:hover:not(.active) {
-    /* letter-spacing: .25em; */
-    /* background-color: var(--background-color-25); */
-}
-
 .active {
     opacity: 1;
     font-weight: bold;

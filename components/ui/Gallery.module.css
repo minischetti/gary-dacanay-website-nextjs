@@ -1,6 +1,6 @@
 .gallery {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: row;
     gap: var(--spacing-md);
 }
 
@@ -10,8 +10,8 @@
     border-radius: var(--border-radius-md);
 }
 
-@media (min-width: 720px) {
+@media (min-width: 720px), (orientation: landscape) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: column;
     }
 }
