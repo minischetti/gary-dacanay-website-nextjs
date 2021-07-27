@@ -1,0 +1,62 @@
+.form {
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: none;
+    gap: var(--spacing-md);
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input {
+    appearance: none;
+    border: 2px solid var(--background-color-25);
+    background-color: var(--background-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    color: var(--font-color);
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--font-color);
+    opacity: .5;
+}
+
+.input:focus {
+    border-color: var(--background-color-25);
+
+}
+
+.message {
+    font-size: 75%;
+}
+
+.fieldButtonContainer {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--spacing-sm);
+}
+
+.button {
+    appearance: none;
+    outline: 0;
+    border: 2px solid var(--background-color-25);
+    border-radius: var(--border-radius-md);
+    background: transparent;
+    color: var(--font-color);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: bold;
+    transition: .25s transform ease;
+}
+
+.button:focus {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(.9);
+}
