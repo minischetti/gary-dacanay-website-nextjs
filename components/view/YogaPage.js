@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SocialBar from "@/components/SocialBar";
 import SocialIcon from "@/components/SocialIcon";
 import {IoLogoFacebook, IoLogoInstagram, IoLogoYoutube, IoMail} from "react-icons/io5/index";
+import Subscribe from "../Subscribe";
 
 export default function YogaPage({children}) {
     return (
@@ -14,6 +15,7 @@ export default function YogaPage({children}) {
                 {children}
             </div>
             <Footer>
+                <Subscribe/>
                 <SocialBar>
                     <SocialIcon url="mailto:gjdacanay@gmail.com" icon={<IoMail size={24}/>}/>
                     <SocialIcon url="https://www.facebook.com/garydacanay" icon={<IoLogoFacebook size={24} />}/>

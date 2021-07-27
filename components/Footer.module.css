@@ -1,13 +1,10 @@
 .footer {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    /*margin-top: 2vh;*/
+    gap: var(--spacing-lg);
     padding: var(--spacing-2xlg);
     justify-content: center;
     align-items: center;
-    /*width: 100%;*/
-    /*border-top: 1px solid rgba(255,255,255,.25);*/
     font-family: 'Inconsolata', monospace;
     font-size: 75%;
     text-transform: uppercase;
