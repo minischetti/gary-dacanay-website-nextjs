@@ -9,18 +9,23 @@ export default async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
-    return res.status(400).json({ error: 'Email is required' });
+    return res.status(400).json({ error: 'E-mail is required' });
   }
 
   try {
-    await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
+    const response = await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
       email_address: email,
       status: 'subscribed'
     });
 
-    return res.status(201).json({ error: '' });
+    if (response.errors.length) { 
+      throw new Error(response.errors);
+    } else {
+      return res.status(200).json();
+    }
+
   } catch (error) {
-      console.log(error);
-    return res.status(500).json({ error: error.message || error.toString() });
+    return res.status(error.status).json({error: JSON.parse(error.response.text).title})
   }
+
 };
