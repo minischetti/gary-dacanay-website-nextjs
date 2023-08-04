@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.55",
-    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/loader": "^2.3.0",
     "@next/mdx": "^11.0.1",
     "@phosphor-icons/react": "^2.0.10",
     "bootstrap-icons": "^1.5.0",
