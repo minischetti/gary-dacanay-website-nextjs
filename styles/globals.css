@@ -19,7 +19,7 @@
 .darkTheme {
   --border-color-25: var(--white25);
   --background-color-25: var(--white25);
-  --background-color: #222;
+  --background-color: #111;
   --background-color-opposite: #ddd;
   --section-background-color: #000;
   --font-color: white;
@@ -53,6 +53,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title);
   font-weight: bold;
+  font-style: italic;
 }
 
 h1, h2, h3, h4, p {

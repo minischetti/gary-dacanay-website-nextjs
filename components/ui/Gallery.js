@@ -35,13 +35,13 @@ export default function Gallery({imageSrcs}) {
         }
     }
     return (
-        <motion.div ref={ref} initial={"initial"} animate={inView ? "animate" : ""} variants={list} className={styles.gallery}>
+        <div ref={ref} initial={"initial"} animate={inView ? "animate" : ""} variants={list} className={styles.gallery}>
             {imageSrcs.map((imageSrc, index) =>
-                <motion.div className={styles.wrapper} key={index} variants={listItem}>
+                <div className={styles.wrapper} key={index}>
                     <Img src={imageSrc} layout={"responsive"}/>
-                </motion.div>
+                </div>
             )}
-        </motion.div>
+        </div>
     )
 }
 

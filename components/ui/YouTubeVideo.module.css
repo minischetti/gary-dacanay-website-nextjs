@@ -4,6 +4,7 @@
     aspect-ratio: 16 / 9;
     padding-bottom: 56.25%;
     border-radius: var(--border-radius-md);
+    border: 1px solid #222;
     overflow: hidden;
 }
 

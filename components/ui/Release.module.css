@@ -4,7 +4,9 @@
     grid-auto-flow: row;
     /* grid-template-columns: 1fr 1fr; */
     border-radius: var(--border-radius-md);
-    background-color: black;
+    /* glowing linear gradient */
+    backdrop-filter: blur(10px);
+    border: 1px solid #222;
     text-align: center;
 }
 
@@ -35,7 +37,6 @@
 
 .title {
     font-family: var(--font-title);
-    font-size: 150%;
     font-weight: bold;
 }
 
@@ -63,7 +64,6 @@
 @media (min-width: 1024px) {
     .release {
         display: grid;
-
         /* grid-template-columns: 2fr 3fr; */
     }
 }
@@ -72,9 +72,12 @@
     .release {
         display: grid;
         grid-template-columns: 1fr 2fr;
-
+        font-size: 1.5rem;
     }
     .release .image {
         margin: var(--spacing-md);
+    }
+    .title {
+        font-size: 3.2rem;
     }
 }

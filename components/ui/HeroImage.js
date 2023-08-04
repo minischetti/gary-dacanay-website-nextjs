@@ -8,10 +8,10 @@ export default function HeroImage({imageSrc}) {
     const scale = useTransform(scrollYProgress, [0, 1], [1, 1.75]);
 
     return (
-        <SlideIn className={styles.hero}>
+        <div className={styles.hero}>
             <motion.div style={{scale: scale}}>
                 <Img src={imageSrc} layout={"responsive"}></Img>
             </motion.div>
-        </SlideIn>
+        </div>
     )
 }

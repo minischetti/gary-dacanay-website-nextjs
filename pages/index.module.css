@@ -7,13 +7,41 @@
 
 .promo {
     display: grid;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
     gap: var(--spacing-lg);
 }
 
 .releases {
     display: grid;
     gap: 1em;
+}
+
+.events {
+    display: flex;
+    gap: 1em;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    border: 1px solid #222;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 60px black;
+}
+
+.event p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #aaa;
+}
+
+.events img {
+    display: block;
 }
 
 @media (min-width: 1920px) {
