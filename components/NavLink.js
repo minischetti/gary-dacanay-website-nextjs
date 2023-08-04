@@ -8,10 +8,8 @@ export default function NavLink({href, children}) {
     const currentPath = router.pathname;
 
     return (
-        <Link href={href}>
-            <a className={`${styles.link}${href === currentPath ? ` ${styles.active}` : ""}`}>
-                {children}
-            </a>
+        <Link href={href} className={`${styles.link}${href === currentPath ? ` ${styles.active}` : ""}`}>
+            {children}
         </Link>
     )
 }
