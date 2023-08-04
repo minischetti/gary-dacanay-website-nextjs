@@ -1,3 +1,10 @@
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: var(--spacing-sm);
+    box-shadow: 0 0 60px black;
+}
+
 .promo {
     display: grid;
     grid-auto-flow: row;

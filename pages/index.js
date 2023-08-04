@@ -6,10 +6,16 @@ import brandNewDay from "../public/releases/brand-new-day.jpeg";
 import keepOnGoing from "../public/releases/keep-on-going.jpeg";
 import takeItSlow from "../public/releases/take-it-slow.jpeg";
 import randomRoad from "../public/releases/random-road.jpeg";
+import {Megaphone} from "@phosphor-icons/react";
+import august19 from "../public/events/august-19.jpeg";
+import Img from "@/components/ui/Img";
+import Image from "next/image";
 
 export default function Home() {
     return (
         <MusicPage>
+
+        <Image className={styles.hero} src={august19} alt={"August 19, 2023"}/>
             <div className={styles.promo}>
                 <div className={styles.releases}>
                     <Release imageSrc={randomRoad}
