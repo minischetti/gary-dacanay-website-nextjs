@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Logo() {
     return (
-        <Link href="/">
+        <Link href="/" passHref>
             <div className={styles.logo}>Gary <span className={styles.bold}>Dacanay</span></div>
         </Link>
     )

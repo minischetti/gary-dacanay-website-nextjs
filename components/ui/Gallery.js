@@ -35,7 +35,7 @@ export default function Gallery({imageSrcs}) {
         }
     }
     return (
-        <div ref={ref} initial={"initial"} animate={inView ? "animate" : ""} variants={list} className={styles.gallery}>
+        <div ref={ref} className={styles.gallery}>
             {imageSrcs.map((imageSrc, index) =>
                 <div className={styles.wrapper} key={index}>
                     <Img src={imageSrc} layout={"responsive"}/>

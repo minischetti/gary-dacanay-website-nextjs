@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function IconLink({href, children}) {
     return (
-        <Link href={href} target={"_blank"} rel={"noreferrer"} className={styles.link}>
+        <Link href={href} target={"_blank"} rel={"noreferrer"} className={styles.link} passHref>
             <div>
                 {children}
             </div>
