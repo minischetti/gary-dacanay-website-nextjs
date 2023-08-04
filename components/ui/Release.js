@@ -18,7 +18,7 @@ export default function Release({imageSrc, title, description, spotifyUrl, apple
                     </div>
                     <div className={styles.buttons}>
                         <Button href={spotifyUrl}><SiSpotify/>Spotify</Button>
-                        <Button className={styles.button}><SiApple/>Apple Music</Button>
+                        <Button href={appleMusicUrl}><SiApple/>Apple Music</Button>
                     </div>
                 </div>
             </div>
