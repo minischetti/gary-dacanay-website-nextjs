@@ -18,8 +18,8 @@ export default function MusicPage({children}) {
                 <Subscribe/>
                 <SocialBar>
                     <SocialIcon url="mailto:gjdacanay@gmail.com" icon={<IoMail size={24}/>}/>
-                    <SocialIcon url="https://www.facebook.com/garydacanay" icon={<IoLogoFacebook size={24} />}/>
-                    <SocialIcon url="https://www.instagram.com/gary_dacanay" icon={<IoLogoInstagram size={24} />}/>
+                    <SocialIcon url="https://www.facebook.com/profile.php?id=100083527954006&mibextid=LQQJ4d" icon={<IoLogoFacebook size={24} />}/>
+                    <SocialIcon url="https://www.instagram.com/gary_dacanay_band" icon={<IoLogoInstagram size={24} />}/>
                     <SocialIcon url="https://www.youtube.com/user/GaryDacanay" icon={<IoLogoYoutube size={24} />}/>
                 </SocialBar>
             </Footer>
