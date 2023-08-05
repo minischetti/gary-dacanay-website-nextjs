@@ -25,20 +25,20 @@ export default function Subscribe() {
 
     if (error) {
       // 4. If there was an error, update the message in state.
-      setMessage(error);
+      alert(error)
 
       return;
     }
 
     // 5. Clear the input value and show a success message.
     inputEl.current.value = '';
-    setMessage('Thanks for subscribing!');
+    alert('Success! 🎉 You are now subscribed to the newsletter.');
   };
 
   return (
-    <form onSubmit={subscribe} className={styles.form}>
-      <label htmlFor="email-input" className={styles.label}>Stay up to date with Gary</label>
-      <div className={styles.fieldButtonContainer}>
+    <form onSubmit={subscribe} className="normal-case flex gap-2 p-4 font-sans flex-col items-center">
+      <label htmlFor="email-input" className="text-sm font-medium italic">Stay up to date with Gary</label>
+      <div className="flex gap-2 font-medium text-sm">
             <input
                 id="email-input"
                 name="email"
@@ -46,12 +46,9 @@ export default function Subscribe() {
                 ref={inputEl}
                 required
                 type="email"
-                className={styles.input}
+                className="px-6 py-3 bg-zinc-100 dark:bg-zinc-700 rounded-md shadow-zinc-900 shadow-md dark:hover:bg-zinc-600"
             />
-            <button type="submit" className={styles.button}>Subscribe</button>
-        </div>
-        <div className={styles.message}>
-            {message}
+            <button type="submit" className="px-4 py-3 dark:bg-zinc-700 rounded-md shadow-zinc-900 shadow-md dark:hover:bg-zinc-600">Subscribe</button>
         </div>
     </form>
   );

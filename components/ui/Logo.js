@@ -1,10 +1,13 @@
 import styles from "@/components/ui/Logo.module.css";
 import Link from "next/link";
+import {useRouter} from "next/router";
 
 export default function Logo() {
+    const router = useRouter()
+    const currentPath = router.pathname;
     return (
         <Link href="/" passHref>
-            <div className={styles.logo}>Gary <span className={styles.bold}>Dacanay</span></div>
+            <div className={currentPath === "/" ? "uppercase font-bold" : "uppercase font-thin"}>Gary <span>Dacanay</span></div>
         </Link>
     )
 }
