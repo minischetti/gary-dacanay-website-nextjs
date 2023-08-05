@@ -1,4 +1,8 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
   --media-query-med: 1024px;
   --white10: rgba(255,255,255,.1);
   --white25: rgba(255,255,255,.25);
@@ -68,4 +72,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */

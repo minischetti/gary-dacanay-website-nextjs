@@ -9,7 +9,7 @@ import Subscribe from "../Subscribe";
 
 export default function YogaPage({children}) {
     return (
-        <BasePage theme={THEME.LIGHT}>
+        <div className="light">
             <Header/>
             <div className={styles.content}>
                 {children}
@@ -22,6 +22,6 @@ export default function YogaPage({children}) {
                     <SocialIcon url="https://www.youtube.com/user/GaryDacanay" icon={<IoLogoYoutube size={24} />}/>
                 </SocialBar>
             </Footer>
-        </BasePage>
+        </div>
     )
 }

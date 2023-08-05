@@ -9,7 +9,7 @@ import Subscribe from "../Subscribe";
 
 export default function MusicPage({children}) {
     return (
-        <BasePage theme={THEME.DARK}>
+        <div className="bg-zinc-900 text-zinc-300">
             <Header/>
             <div className={styles.content}>
                 {children}
@@ -23,6 +23,6 @@ export default function MusicPage({children}) {
                     <SocialIcon url="https://www.youtube.com/user/GaryDacanay" icon={<IoLogoYoutube size={24} />}/>
                 </SocialBar>
             </Footer>
-        </BasePage>
+        </div>
     )
 }
