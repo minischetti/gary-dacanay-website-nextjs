@@ -1,6 +1,4 @@
-import HeroImage from "@/components/ui/HeroImage";
 import Section from "@/components/ui/Section";
-import Gallery from "@/components/ui/Gallery";
 import { IconLink } from "@/components/ui/Link";
 import YogaPage from "@/components/view/YogaPage";
 import yogaBackground from "../public/yoga/yoga-background.jpg"
@@ -15,8 +13,8 @@ export default function Yoga() {
             <div className="block rounded-lg overflow-hidden">
                 <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
                     {[yogaBackground, yoga1, yoga2, yoga3].map((src, index) => (
-                        <swiper-slide key={index}>
-                            <Image src={src}></Image>
+                        <swiper-slide key={index} lazy="true">
+                            <Image src={src} loading="lazy" alt="Yoga image"></Image>
                         </swiper-slide>
                     ))}
                 </swiper-container>

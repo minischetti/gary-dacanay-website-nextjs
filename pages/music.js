@@ -20,20 +20,20 @@ export default function Music() {
             <div className="block rounded-lg overflow-hidden">
                 <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
                     {[musicBackground, music0, music1, music2].map((src, index) => (
-                        <swiper-slide key={index}>
-                            <Image src={src}></Image>
+                        <swiper-slide key={index} lazy="true">
+                            <Image src={src} loading="lazy" alt="Music image"></Image>
                         </swiper-slide>
                     ))}
-                    <swiper-slide>
-                            <div className={styles.video}>
-                                <YouTubeVideo embedId="LZE8NTRSx2w" />
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div className={styles.video}>
-                                <YouTubeVideo embedId="oNMjKGADGqM" />
-                            </div>
-                        </swiper-slide>
+                    <swiper-slide lazy="true">
+                        <div className={styles.video}>
+                            <YouTubeVideo embedId="LZE8NTRSx2w" />
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide lazy="true">
+                        <div className={styles.video}>
+                            <YouTubeVideo embedId="oNMjKGADGqM" />
+                        </div>
+                    </swiper-slide>
                 </swiper-container>
                 <div className="grid gap-4 my-4">
                     <Section title="Biography">

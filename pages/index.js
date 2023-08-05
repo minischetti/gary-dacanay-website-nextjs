@@ -26,7 +26,7 @@ export default function Home() {
                         </swiper-slide>
                         <swiper-slide>
                             <Release imageSrc={randomRoad}
-                                title={"Random Road"}
+                                title={"Random Road EP"}
                                 spotifyUrl={"https://open.spotify.com/album/4k3pJSqC21jwll71Q7dyUK?si=KMxXpr7MTNaGCe581GDFvw"}
                                 appleMusicUrl={"https://music.apple.com/us/album/random-road-ep/1684457684"}>
                             </Release>
