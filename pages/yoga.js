@@ -14,8 +14,8 @@ export default function Yoga() {
         <YogaPage>
             <div className="block rounded-lg overflow-hidden">
                 <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
-                    {[yogaBackground, yoga1, yoga2, yoga3].map((src) => (
-                        <swiper-slide>
+                    {[yogaBackground, yoga1, yoga2, yoga3].map((src, index) => (
+                        <swiper-slide key={index}>
                             <Image src={src}></Image>
                         </swiper-slide>
                     ))}
