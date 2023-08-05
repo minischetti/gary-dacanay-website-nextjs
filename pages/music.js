@@ -19,11 +19,6 @@ export default function Music() {
         <MusicPage>
             <div className="block rounded-lg overflow-hidden">
                 <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
-                    {["music/music-background.jpg", "music/music-0.jpg", "music/music-1.jpg", "music/music-2.jpg"].map((src, index) => (
-                        <swiper-slide key={index} lazy="true">
-                            <img src={src} loading="lazy" alt="Music image"></img>
-                        </swiper-slide>
-                    ))}
                     <swiper-slide lazy="true">
                         <div className={styles.video}>
                             <YouTubeVideo embedId="LZE8NTRSx2w" />
@@ -34,6 +29,11 @@ export default function Music() {
                             <YouTubeVideo embedId="oNMjKGADGqM" />
                         </div>
                     </swiper-slide>
+                    {["music/music-background.jpg", "music/music-1.jpg", "music/music-2.jpg"].map((src, index) => (
+                        <swiper-slide key={index} lazy="true">
+                            <img src={src} loading="lazy" alt="Music image"></img>
+                        </swiper-slide>
+                    ))}
                 </swiper-container>
                 <div className="grid gap-4 my-4">
                     <Section title="Biography">
