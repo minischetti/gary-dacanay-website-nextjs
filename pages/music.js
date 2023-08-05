@@ -24,6 +24,16 @@ export default function Music() {
                             <Image src={src}></Image>
                         </swiper-slide>
                     ))}
+                    <swiper-slide>
+                            <div className={styles.video}>
+                                <YouTubeVideo embedId="LZE8NTRSx2w" />
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div className={styles.video}>
+                                <YouTubeVideo embedId="oNMjKGADGqM" />
+                            </div>
+                        </swiper-slide>
                 </swiper-container>
                 <div className="grid gap-4 my-4">
                     <Section title="Biography">

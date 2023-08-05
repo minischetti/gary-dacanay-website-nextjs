@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <MusicPage>
             <div className="flex flex-col gap-4">
-                <div className="p-4 bg-zinc-800 rounded-lg drop-shadow-2xl border-t-zinc-700 border-t bg-gradient-to-tr from-zinc-900 to-zinc-800">
+                <div className="p-4 bg-zinc-800 rounded-lg border-t-zinc-700 border-t">
                     <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
                         <swiper-slide>
                             <Release imageSrc={august19}
@@ -51,16 +51,6 @@ export default function Home() {
                                 spotifyUrl={"https://open.spotify.com/album/6DCADEncWoSO0PSFIHNNhX"}
                                 appleMusicUrl={"https://music.apple.com/us/album/keep-on-going-single/1577093788"}>
                             </Release>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div className={styles.video}>
-                                <YouTubeVideo embedId="LZE8NTRSx2w" />
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div className={styles.video}>
-                                <YouTubeVideo embedId="oNMjKGADGqM" />
-                            </div>
                         </swiper-slide>
                     </swiper-container>
                 </div>
