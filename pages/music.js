@@ -19,9 +19,9 @@ export default function Music() {
         <MusicPage>
             <div className="block rounded-lg overflow-hidden">
                 <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
-                    {[musicBackground, music0, music1, music2].map((src, index) => (
+                    {["music/music-background.jpg", "music/music-0.jpg", "music/music-1.jpg", "music/music-2.jpg"].map((src, index) => (
                         <swiper-slide key={index} lazy="true">
-                            <Image src={src} loading="lazy" alt="Music image"></Image>
+                            <img src={src} loading="lazy" alt="Music image"></img>
                         </swiper-slide>
                     ))}
                     <swiper-slide lazy="true">
