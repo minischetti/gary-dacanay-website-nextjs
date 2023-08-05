@@ -37,7 +37,6 @@ export default function Subscribe() {
 
   return (
     <form onSubmit={subscribe} className="normal-case flex gap-2 p-4 font-sans flex-col items-center">
-      <label htmlFor="email-input" className="text-sm font-medium italic">Stay up to date with Gary</label>
       <div className="flex gap-2 font-medium text-sm">
             <input
                 id="email-input"
@@ -46,9 +45,9 @@ export default function Subscribe() {
                 ref={inputEl}
                 required
                 type="email"
-                className="px-6 py-3 bg-zinc-100 dark:bg-zinc-700 rounded-md shadow-zinc-900 shadow-md dark:hover:bg-zinc-600"
+                className="px-6 py-3 bg-zinc-200 hover:bg-zinc-300 focus:outline-none dark:bg-zinc-700 rounded-md shadow-zinc-900 shadow-md dark:hover:bg-zinc-600"
             />
-            <button type="submit" className="px-4 py-3 dark:bg-zinc-700 rounded-md shadow-zinc-900 shadow-md dark:hover:bg-zinc-600">Subscribe</button>
+            <button type="submit" className="px-4 py-3 bg-zinc-200 hover:bg-zinc-300 focus:outline-none dark:bg-zinc-700 rounded-md shadow-zinc-900 shadow-md dark:hover:bg-zinc-600">Subscribe</button>
         </div>
     </form>
   );

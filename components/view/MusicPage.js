@@ -9,7 +9,7 @@ import Subscribe from "../Subscribe";
 
 export default function MusicPage({children}) {
     return (
-        <div className="bg-zinc-900 text-zinc-300 pb-10 dark">
+        <div className="bg-zinc-900 text-zinc-300 dark">
             <Header/>
             <div className={styles.content}>
                 {children}

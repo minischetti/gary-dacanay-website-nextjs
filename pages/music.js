@@ -12,11 +12,12 @@ import MusicPage from "@/components/view/MusicPage";
 import Venmo from "@/components/ui/Venmo";
 import Divider from "@/components/ui/Divider";
 import Image from "next/image";
+import YouTubeVideo from "@/components/ui/YouTubeVideo";
 
 export default function Music() {
     return (
         <MusicPage>
-            <div className="block">
+            <div className="block rounded-lg overflow-hidden">
                 <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
                     {[musicBackground, music0, music1, music2].map((src) => (
                         <swiper-slide>

@@ -43,17 +43,15 @@ export default function Home() {
                                 title={"Brand New Day"}
                                 spotifyUrl={"https://open.spotify.com/album/6bOo7B27gDnbA70Rr4CANU"}
                                 appleMusicUrl={"https://music.apple.com/us/album/brand-new-day-single/1551250045"}>
-                            </Release></swiper-slide>
+                            </Release>
+                        </swiper-slide>
                         <swiper-slide>
                             <Release imageSrc={keepOnGoing}
                                 title={"Keep On Going"}
                                 spotifyUrl={"https://open.spotify.com/album/6DCADEncWoSO0PSFIHNNhX"}
                                 appleMusicUrl={"https://music.apple.com/us/album/keep-on-going-single/1577093788"}>
-                            </Release></swiper-slide>
-                    </swiper-container>
-                </div>
-                <div className="w-full">
-                    <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
+                            </Release>
+                        </swiper-slide>
                         <swiper-slide>
                             <div className={styles.video}>
                                 <YouTubeVideo embedId="LZE8NTRSx2w" />

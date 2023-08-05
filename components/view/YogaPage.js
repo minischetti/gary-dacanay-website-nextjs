@@ -9,7 +9,7 @@ import Subscribe from "../Subscribe";
 
 export default function YogaPage({children}) {
     return (
-        <div className="light bg-zinc-200">
+        <div className="light bg-zinc-100">
             <Header/>
             <div className={styles.content}>
                 {children}
