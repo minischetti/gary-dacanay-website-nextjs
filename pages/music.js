@@ -29,7 +29,7 @@ export default function Music() {
                             <YouTubeVideo embedId="oNMjKGADGqM" />
                         </div>
                     </swiper-slide>
-                    {["music/music-background.jpg", "music/music-1.jpg", "music/music-2.jpg"].map((src, index) => (
+                    {["music/music-background.jpg", "music/music-0.jpg", "music/music-1.jpg", "music/music-2.jpg"].map((src, index) => (
                         <swiper-slide key={index} lazy="true">
                             <img src={src} loading="lazy" alt="Music image"></img>
                         </swiper-slide>
