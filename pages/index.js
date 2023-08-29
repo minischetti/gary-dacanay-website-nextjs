@@ -19,12 +19,6 @@ export default function Home() {
                 <div className="p-4 bg-zinc-800 rounded-lg border-t-zinc-700 border-t">
                     <swiper-container navigation="true" pagination="true" scrollbar="true" loop>
                         <swiper-slide>
-                            <Release imageSrc={august19}
-                                title={"B-Side Lounge"}>
-                                <Button href="https://www.ticketweb.com/event/b-side-patio-series-presents-b-side-lounge-tickets/13435478"><Ticket />Buy Tickets</Button>
-                            </Release>
-                        </swiper-slide>
-                        <swiper-slide>
                             <Release imageSrc={randomRoad}
                                 title={"Random Road EP"}
                                 spotifyUrl={"https://open.spotify.com/album/4k3pJSqC21jwll71Q7dyUK?si=KMxXpr7MTNaGCe581GDFvw"}
